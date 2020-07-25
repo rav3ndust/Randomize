@@ -15,27 +15,31 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 <!--
 Create the element styles
 -->
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
     
 <style>
     
     body {                                          
         background-color: purple;
         text-align: left;
+        font-family: Ubuntu;                /* We use the Ubuntu font family in this application, let's keep it uniform */
     }
-    
+                                            /* Let's come up with a better color scheme. This one sucks. */    
     head {
-        background-color: red;
+        color: red;
         text-align: center;
+        font-family: Ubuntu;
     }
     
     footer {
         background-color: red;
         text-align: center;
+        font-family: Ubuntu;
         
     }
     
     .button1 {
-        background-color: red;
+        background-color: green;
         border: none;
         color: white; 
         text-align: center; 
@@ -50,41 +54,64 @@ Create the element styles
     body2 {
         background-color: white; 
         text-align: right;
+        font-family: Ubuntu;
         
     }
-    
+
     .silver-background {
         background-color: silver;
         text-align: right;
+        font-family: Ubuntu;
     }
     
-</style>
+    .button2 {                          /* The RANDOMIZE button needs to be a lot bigger to grab attention, fix this */
+        background-color: red;
+        border: none;
+        color: white;
+        text-align: center;
+        display: inline-block;
+        margin-top: 10px;
+        margin-right: 5px;
+        margin-left: 10px;
+        margin-bottom: 5px;
+        cursor: pointer;
+    }
+      
     
+</style>
+<!--
+Create the title and heading
+-->
     <head>
         <title>Randomize!~</title>
         <h1><b>Randomize!~</b></h1>
     </head>
     
 <br/>
-    
+<!--
+Tell the user what the application is all about, and explain their options
+-->
     <body>
         <h3>Get Ready For Random Fun Facts!</h3>
         <p>Intelligent folks say we should always be learning.</p>
         <p>In that spirit, we want to share random fun facts with you!</p>
         <p>These random fun facts will teach everyone something new every single day!</p>
-        <h3><i>Just click a button below to get started!</i></h3>
+        <h3><i>Just click a button below to get started with your favorite category!</i></h3>
+        <p>You can also click the "RANDOMIZE ME!" button for a completely <i>random</i> fact, just for you!</p>
 <!--
 Create buttons for the user to select based on the random facts they'd like to see
 -->
-        <input type="button" class="button" value="Animal Facts">
-        <input type="button" class="button" value="Movie Facts">
-        <input type="button" class="button" value="Random Science Facts">
-        <input type="button" class="button" value="Technology Facts">
+        <input type="button" class="button1" value="Animal Facts">
+        <input type="button" class="button1" value="Movie Facts">
+        <input type="button" class="button1" value="Random Science Facts">
+        <input type="button" class="button1" value="Technology Facts">
+        <input type="button" class="button1" value="History Facts">
+        <input type="button" class="button2" value="RANDOMIZE Me!">
         
     </body>
     
 <!--
-Create a way for users to send their own random facts through the site database (mySQL?)
+Create a way for users to send their own random facts to the app
 -->
     <div class="silver-background">
         <h2>Want to Submit Your Own Random Facts?</h2>
@@ -92,7 +119,7 @@ Create a way for users to send their own random facts through the site database 
         <p>Use the handy button below to get started.</p>
         
         <input type="button" class="button" value="Send Us Your Facts!">
-        
+                                                                   <!--This section could use some cleaning up, too-->
     </div>
     
 <br/>
@@ -103,16 +130,9 @@ Create the footer with company name and clickable links to privacy policy and TO
     
     <footer>
         <h3>Powered by <b>Silverfang Technologies</b></h3>
-        <p>Terms of Use | Privacy Policy<p>
-    </footer>
+        <a href="#terms">Terms of Service |</a><a href="#privacy-policy">Privacy Policy</a>
+    </footer>                               
+                                <!--Replace dead links with real links when they are made-->
 
-
-
-
-
-
-
-
-
-
+    
 </html>
