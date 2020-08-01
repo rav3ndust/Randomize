@@ -22,17 +22,18 @@ Create the element styles and link the Ubuntu font family to the page
         font-family: Ubuntu;                /* We're using the Ubuntu font family to keep a consistent feel */
     }
                                             /* Let's come up with a better color scheme. This one sucks. */    
-    head {
-        color: red;
+    header {
+        color: white;
+        background-color: red;
         text-align: center;
         font-family: Ubuntu;
-    }
+    }                           /* The header needs some extra padding added to it in order to fill out the top of page a little more */
     
     footer {
         background-color: red;
         text-align: center;
         font-family: Ubuntu;
-        
+        color: white;
     }
     
     .button1 {
@@ -58,6 +59,12 @@ Create the element styles and link the Ubuntu font family to the page
     .silver-background {
         background-color: silver;
         text-align: right;
+        font-family: Ubuntu;
+    }
+
+    .silver-background1 {           /* Create another silver-background element in order to center the "Get Ready For..." section with buttons properly */
+        background-color: silver;
+        text-align: center; 
         font-family: Ubuntu;
     }
   
@@ -98,15 +105,15 @@ Create the element styles and link the Ubuntu font family to the page
 <!--
 Create the heading
 -->
-    <head>
+    <header>
         <h1><b>Randomize!~</b></h1>
-    </head>
+    </header>
     
 <br/>
 <!--
 Tell the user what the application is all about, and explain their options
 -->
-    <body>
+    <body class="silver-background1">
         <h3>Get Ready For Random Fun Facts!</h3>
         <h4>To begin, simply choose your <b>Category</b> below.</h4>
         <p>Intelligent folks say we should always be learning.</p>
