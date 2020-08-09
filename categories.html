@@ -21,19 +21,18 @@ Create the element styles and link the Ubuntu font family to the page
         text-align: left;
         font-family: Ubuntu;                /* We're using the Ubuntu font family to keep a consistent feel */
     }
-                                            /* Let's come up with a better color scheme. This one sucks. */    
-    header {
-        color: white;
-        background-color: red;
+                                            /* We will adjust the background on each page to follow white/green/red schemes */    
+    head {
+        color: red;
         text-align: center;
         font-family: Ubuntu;
-    }                           /* The header needs some extra padding added to it in order to fill out the top of page a little more */
+    }
     
     footer {
         background-color: red;
         text-align: center;
         font-family: Ubuntu;
-        color: white;
+        
     }
     
     .button1 {
@@ -61,12 +60,6 @@ Create the element styles and link the Ubuntu font family to the page
         text-align: right;
         font-family: Ubuntu;
     }
-
-    .silver-background1 {           /* Create another silver-background element in order to center the "Get Ready For..." section with buttons properly */
-        background-color: silver;
-        text-align: center; 
-        font-family: Ubuntu;
-    }
   
     .silver-background2 {		/* Create a second silver-background class in order to align text to the left without changing original */
 	background-color: silver;
@@ -88,9 +81,9 @@ Create the element styles and link the Ubuntu font family to the page
     }
 
     .white-background {			/* For the separation of the h3 element */
-	background-color: white;
-	text-align: center;
-	font-family: Ubuntu;
+	   background-color: white;
+	   text-align: center;
+	   font-family: Ubuntu;
      }		 
     
     body2 {
@@ -99,21 +92,33 @@ Create the element styles and link the Ubuntu font family to the page
         text-align: center;
     }
     
+    .button-green {
+        color: white; 
+        background-color: green; 
+        font-family: Ubuntu; 
+    } 
+    
+    .button-red {
+        color: white; 
+        background-color: red;
+        font-family: Ubuntu; 
+    }
+    
 </style>
 <!--Create the title for the browser tab/web app-->
     <title>Categories!</title>
 <!--
 Create the heading
 -->
-    <header>
+    <head>
         <h1><b>Randomize!~</b></h1>
-    </header>
+    </head>
     
 <br/>
 <!--
 Tell the user what the application is all about, and explain their options
 -->
-    <body class="silver-background1">
+    <body>
         <h3>Get Ready For Random Fun Facts!</h3>
         <h4>To begin, simply choose your <b>Category</b> below.</h4>
         <p>Intelligent folks say we should always be learning.</p>
@@ -124,16 +129,38 @@ Tell the user what the application is all about, and explain their options
 <!--
 Create buttons for the user to select based on the random facts they'd like to see
 -->
-        <input type="button" class="button1" value="Animal Facts">  <!--Will link to "animal-fax.html" page-->
-        <input type="button" class="button1" value="Movie Facts">   <!--Will link to "movie-fax.html" page-->
-        <input type="button" class="button1" value="Science Facts"> <!--Will link to "science-fax.html" page-->
-        <input type="button" class="button1" value="Technology Facts">  <!--Will link to "tech-fax.html" page-->
-        <input type="button" class="button1" value="History Facts"> <!--Will link to "history-fax.html" page-->
-	<input type="button" class="button1" value="This Day in History">  <!--Will link to "this-day.html" page-->
-        <input type="button" class="button2" value="RANDOMIZE Me!"> <!--Will link to "random.html" page-->
+        <!--Create the Random Animal Facts button-->
+        <button type="button" class="button-green">
+            <a href="animal-fax.html">Animal Facts</a>
+        </button>   <!--Link to "animal-fax.html" page for random animal facts-->
+        
+        <!--Create the Random Movie Facts button-->
+        <button type="button" class="button-green">
+            <a href="movie-fax.html">Movie Facts</a>
+        </button>   <!--Link to "movie-fax.html" page for random movie facts-->
+        
+        <!--Create the Random Science Facts button-->
+        <button type="button" class="button-green">
+            <a href="science-fax.html">Science Facts</a>
+        </button>   <!--Link to "science-fax.html" page for random science facts-->
+        
+        <!--Create the Random Technology Facts button-->
+        <button type="button" class="button-green">
+            <a href="tech-fax.html">Technology Facts</a>
+        </button>   <!--Link to "tech-fax.html" page for random technology facts-->
+        
+        <!--Link to Random History Facts button-->
+        <button type="button" class="button-green">
+            <a href="history-fax.html">History Facts</a>
+        </button>   <!--Link to "history-fax.html" for random history facts-->
+        
+        <!--Create the "RANDOMIZE Me!" button-->
+        <button type="button" class="button-red">
+            <a href="randomizeme.html">RANDOMIZE Me!</a>
+        </button>   <!--Link to "randomizeme.html" for random facts from the entire database-->
         
     </body>
-<!--create line breaks to create more space between the content-->    
+    
 <br/>
     <br/>
         <br/>
@@ -186,7 +213,7 @@ Create the footer with company name and clickable links to privacy policy and TO
         <h3>Powered by <b>Silverfang Technologies</b></h3>
         <a href="#terms">Terms of Service |</a><a href="#privacy-policy">Privacy Policy</a>
     </footer>                               
-                                <!--Replace dead links with live links when they are made (TOS, Privacy Policy)-->
+                                <!--Replace dead links with real links when they are made-->
 
     
 </html>
