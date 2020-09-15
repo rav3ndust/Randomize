@@ -28,7 +28,10 @@ facts[24] = 'Natalie Portman paid for dance training out of pocket in preparatio
 facts[25] = 'Brad Pitt and Edward Norton learned how to make their own soap for the filming of Fight Club.';
 facts[26] = 'In Forrest Gump, Tom Hanks was not paid for the film. Instead, he was paid in percentage points and he made forty million dollars.';
 facts[27] = 'Kate Winslet decided to flash Leonardo DiCaprio the first time they met after learning she had to be naked in front of him for the film Titanic.';
-facts[28] = 'The sounds the Velociraptors made in Jurassic Park are the same sounds tortoises make while having sex. ; 
+facts[28] = 'The sound the Velociraptors made Jurassic Park is the same sound tortoises make when having sex. ; 
+facts[29] = 'Josh Hutcherson received a concussion from co-star Jennifer Lawarence on the set of the Hunger Games. ;
+facts[30] = 'Nesle provided 1850 chocolate bars for the movie Charlie and the Chocolate Factor.;
+
 
 //create a way to send the random facts back to the user when the button is pressed
 function newFact() {
