@@ -31,6 +31,7 @@ facts[27] = 'Kate Winslet decided to flash Leonardo DiCaprio the first time they
 facts[28] = 'The sounds the Velociraptors made in Jurassic Park are the same sounds tortoises make while having sex.' ;
 facts[29] = 'Josh Hutcherson received a concussion from co-star Jennifer Lawrence on the set of the Hunger Games.' ;
 facts[30] = 'Nestle provided 1850 chocolate bars for the movie Charlie and the Charlie Factory.' ;
+facts[31] = 'Black Panther actor Chadwick Boseman was battling colon cancer during the filming of the movie, eventually succumbing to the illness in 2020.' ;
 
 //create a way to send the random facts back to the user when the button is pressed
 function newFact() {
